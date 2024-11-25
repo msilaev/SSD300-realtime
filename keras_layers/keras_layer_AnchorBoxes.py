@@ -199,8 +199,16 @@ class AnchorBoxes(Layer):
                 offset_height = self.this_offsets
                 offset_width = self.this_offsets
         # Now that we have the offsets and step sizes, compute the grid of anchor box center points.
-        cy = np.linspace(offset_height * step_height, (offset_height + feature_map_height - 1) * step_height, feature_map_height)
-        cx = np.linspace(offset_width * step_width, (offset_width + feature_map_width - 1) * step_width, feature_map_width)
+        #cy = np.linspace(offset_height * step_height, (offset_height + feature_map_height - 1) * step_height, feature_map_height)
+        cy = np.linspace(int(offset_height) * step_height,
+                         (int(offset_height) + int(feature_map_height) - 1) * step_height,
+                         int(feature_map_height))
+
+        #cx = np.linspace(offset_width * step_width, (offset_width + feature_map_width - 1) * step_width, feature_map_width)
+
+        cx = np.linspace(int(offset_width) * step_width, (int(offset_width) + int(feature_map_width) - 1) * step_width,
+                         int(feature_map_width))
+
         cx_grid, cy_grid = np.meshgrid(cx, cy)
         cx_grid = np.expand_dims(cx_grid, -1) # This is necessary for np.tile() to do what we want further down
         cy_grid = np.expand_dims(cy_grid, -1) # This is necessary for np.tile() to do what we want further down

@@ -61,12 +61,7 @@ classes = ['background',
 
 
 
-##################################### TASK ####################################
-#
-# NOTE: The video player can be stopped by selecting the video player window
-#       and pressing 'q'
-#
-# Your task:
+##################################### Algorithm ####################################
 #   1. Read a frame from camera using cam.read
 #      If no webcam is availabe, use run.gif similarly as in Task 1 or any other suitable video.
 #
@@ -103,8 +98,6 @@ classes = ['background',
 #      in the predictions.
 #
 ###############################################################################
-
-
 # Create a camera instance, options for prerecorded videos also
 #cam = cv2.VideoCapture('run.gif')
 #cam = cv2.VideoCapture('walking.mp4')
