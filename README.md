@@ -1,7 +1,7 @@
 # SSD300 Real-Time Object Detection
 
-This project uses TensorFlow and Keras to implement the **SSD300 (Single Shot Multibox Detector)** for real-time object detection
-. SSD is a fast and efficient deep-learning model that can accurately detect objects
+This project uses TensorFlow and Keras to implement the **SSD300 (Single Shot Multibox Detector)** for real-time object detection using a laptop
+web camera. SSD is a fast and efficient deep-learning model that can accurately detect objects
 in images and video streams.
 
 ## Source 
